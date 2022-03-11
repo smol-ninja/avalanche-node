@@ -17,7 +17,11 @@ else
 fi
 
 # build docker image
-docker build --build-arg version=$VERSION -t "avalanche-node-${VERSION}" .
+docker build \
+  --build-arg VERSION=$VERSION \
+  --build-arg UID=$(id -u) \
+  --build-arg GID=$(id -g) \
+  -t "avalanche-node-${VERSION}" .
 
 # run container
 docker stop avalanche-node && docker rm avalanche-node
@@ -25,5 +29,4 @@ docker run -d \
   -p 9651:9651 \
   -p 80:80 \
   -v $HOME/avax-data:/root/.avalanchego \
-  -u ubuntu \
   --name="avalanche-node" avalanche-node-$VERSION
