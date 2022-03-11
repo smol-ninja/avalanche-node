@@ -1,6 +1,10 @@
 #!/bin/bash
 export VERSION=v1.7.7
 
+# fetch latest commits
+git checkout .
+git pull origin master
+
 # Download binary
 if [ -d "avalanchego-${VERSION}" ]
 then
@@ -21,4 +25,5 @@ docker run -d \
   -p 9651:9651 \
   -p 80:80 \
   -v $HOME/avax-data:/root/.avalanchego \
+  -u ubuntu
   --name="avalanche-node" avalanche-node-$VERSION
