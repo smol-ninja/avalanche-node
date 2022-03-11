@@ -20,5 +20,5 @@ docker stop avalanche-node && docker rm avalanche-node
 docker run -d \
   -p 9651:9651 \
   -p 80:80 \
-  -v $HOME/avax-data:/data \
+  -v $HOME/avax-data:/$HOME/.avalanchego \
   --name="avalanche-node" avalanche-node-$VERSION
