@@ -1,5 +1,5 @@
 #!/bin/bash
-export VERSION=v1.7.7
+export VERSION=v1.7.8
 
 # fetch latest commits
 git checkout .
@@ -24,7 +24,7 @@ docker build \
   -t "avalanche-node-${VERSION}" .
 
 # run container
-docker stop avalanche-node && docker rm avalanche-node
+# docker stop avalanche-node && docker rm avalanche-node
 docker run -d \
   -p 9651:9651 \
   -p 80:80 \
