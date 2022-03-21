@@ -14,6 +14,7 @@ ARG UNAME=root
 
 WORKDIR /$UNAME/
 ADD avalanchego-$VERSION avalanchego
+ADD configs/node.json node.json
 # RUN chown -R $UID:$GID avalanchego
 
 # USER $UNAME
@@ -21,7 +22,4 @@ ADD avalanchego-$VERSION avalanchego
 EXPOSE 9651
 
 CMD ./avalanchego/avalanchego \
-    --http-host=0.0.0.0 \
-    --http-port=80 \
-    --staking-port=9651 \
-    --staking-enabled=true
+    --config-file=node.json

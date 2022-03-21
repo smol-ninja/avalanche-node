@@ -1,0 +1,7 @@
+{
+  "http-host": "0.0.0.0",
+  "http-port": 80,
+  "public-ip": "54.251.247.98",
+  "staking-port": 9651,
+  "staking-enabled": true
+}

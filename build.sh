@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # fetch latest commits
-git checkout .
 git pull origin master
 
 export VERSION=v1.7.8
