@@ -1,9 +1,6 @@
 #!/bin/bash
 
-# fetch latest commits
-git pull origin master
-
-export VERSION=v1.7.9
+export VERSION=v1.7.10
 
 # Download binary
 if [ -d "avalanchego-${VERSION}" ]
