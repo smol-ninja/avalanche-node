@@ -8,9 +8,9 @@ then
   echo "version ${VERSION} already exists"
 else
   echo "downloading new version ${VERSION}"
-  wget https://github.com/ava-labs/avalanchego/releases/download/$VERSION/avalanchego-linux-amd64-$VERSION.tar.gz
-  tar -xvf avalanchego-linux-amd64-$VERSION.tar.gz
-  rm avalanchego-linux-amd64-$VERSION.tar.gz
+  wget https://github.com/ava-labs/avalanchego/releases/download/$VERSION/avalanchego-linux-arm64-$VERSION.tar.gz
+  tar -xvf avalanchego-linux-arm64-$VERSION.tar.gz
+  rm avalanchego-linux-arm64-$VERSION.tar.gz
 fi
 
 # build docker image
