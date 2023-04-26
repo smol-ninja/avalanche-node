@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ ! -e monitoring-installer.sh ]
 then
-  wget -nd -m https://raw.githubusercontent.com/ava-labs/avalanche-docs/master/scripts/monitoring-installer.sh
+  wget -nd -m https://raw.githubusercontent.com/ava-labs/avalanche-monitoring/main/grafana/monitoring-installer.sh
   chmod 755 monitoring-installer.sh
 fi
 
