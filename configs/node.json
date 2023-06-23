@@ -1,7 +1,8 @@
 {
   "http-host": "0.0.0.0",
   "http-port": 80,
+  "http-allowed-hosts": "*",
   "public-ip": "3.10.125.238",
   "staking-port": 9651,
-  "staking-enabled": true
+  "sybil-protection-enabled": true
 }
