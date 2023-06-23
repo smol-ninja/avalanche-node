@@ -1,7 +1,7 @@
 FROM arm64v8/ubuntu:20.04
 
 RUN apt-get update \
-    && apt-get upgrade \
+    && apt-get --assume-yes upgrade \
     && apt-get clean
 
 ARG VERSION
