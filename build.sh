@@ -27,4 +27,6 @@ docker run -d \
   -p 80:80 \
   -v $HOME/avax-data:/root/.avalanchego \
   -v $HOME/offline-pruning:/root/offline-pruning \
-  --name="avalanche-node" avalanche-node-$VERSION
+  --name="avalanche-node" \
+  --restart=always \
+  avalanche-node-$VERSION
