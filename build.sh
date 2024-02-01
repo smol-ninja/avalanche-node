@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export VERSION=v1.10.17
+export VERSION=v1.10.19
 
 # Download binary
 if [ -d "avalanchego-${VERSION}" ]
