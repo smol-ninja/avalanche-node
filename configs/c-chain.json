@@ -1,4 +1,5 @@
 {
   "offline-pruning-enabled": false,
-  "offline-pruning-data-directory": "/root/offline-pruning"
+  "offline-pruning-data-directory": "/root/offline-pruning",
+  "state-sync-enabled": true
 }
